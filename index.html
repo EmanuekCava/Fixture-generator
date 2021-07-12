@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="versus1.ico" type="image/x-icon">
+    <title>Generate | Fixture</title>
+</head>
+
+<body>
+
+    <main id="principal-form">
+        <div style="display: none;" class="content-message" id="messageForm1">
+            <p>The amount of teams must be more than one team.</p>
+        </div>
+        <div style="display: none;" class="content-message" id="messageForm2">
+            <p>The amount of teams must be thirty teams or less than thirty teams.</p>
+        </div>
+        <div class="content-form">
+            <form id="form">
+                <div class="separator-form">
+                    <label for="teams" class="amount">AMOUNT OF TEAMS</label>
+                    <input type="number" name="teams" id="teams" class="amount-input" value="8">
+                </div>
+                <div style="display: flex; justify-content: center;" class="separator-form">
+                    <p class="round-trip">ROUND TRIP?</p>
+                    <div class="content-radio">
+                        <input name="roundT" type="radio" class="input-radio" value="0" id="yes">
+                        <label class="label-radio" for="yes">YES</label>
+                        <input name="roundT" type="radio" class="input-radio" value="1" id="yes" checked="checked">
+                        <label class="label-radio" for="yes">NO</label>
+                    </div>
+                </div>
+                <div class="separator-form">
+                    <button class="button-write">
+                        WRITE THE TEAMS
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <main style="display: none;" id="principal-teams" class="principal-teams">
+        <h1 class="title-teams">WRITE THE NAMES OF THE TEAMS</h1>
+        <div style="display: none;" class="content-message" id="messageTeams">
+            <p>Ensures that all teams have names</p>
+        </div>
+        <form id="form-generate">
+
+            <div class="generate-button">
+                <button>
+                    GENERATE
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <main style="display: none;" id="principal-fixture">
+        
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
